@@ -30,5 +30,10 @@ public class UserService {
         return userDTO;
     }
 
+    public UserDTO saveAddress(UserDTO userDTO){
+        userRepo.save(modelMapper.map(userDTO,User.class));
+        return userDTO;
+    }
+
 
 }

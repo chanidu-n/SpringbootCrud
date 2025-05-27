@@ -22,6 +22,11 @@ public class UserController {
     @PostMapping ("/adduser")
     public UserDTO saveUser(@RequestBody UserDTO userDTO){
         return userService.saveUser(userDTO);
+
+    }
+    @PostMapping ("/address")
+    public  UserDTO saveAdress(@RequestBody UserDTO userDTO){
+        return userService.saveAddress(userDTO);
     }
 }
 
