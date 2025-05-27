@@ -17,8 +17,8 @@ import java.util.List;
 public class UserController {
     @Autowired
     private UserService userService;
-    @GetMapping ("/getUser")
-    public List<UserDTO> getUser() {
+    @GetMapping ("/getUsers")
+    public List<UserDTO> getUsers() {
         return userService.getAllUsers();
     }
 }
