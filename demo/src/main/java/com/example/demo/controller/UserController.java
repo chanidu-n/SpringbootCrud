@@ -24,10 +24,7 @@ public class UserController {
         return userService.saveUser(userDTO);
 
     }
-    @PostMapping ("/address")
-    public  UserDTO saveAdress(@RequestBody UserDTO userDTO){
-        return userService.saveAddress(userDTO);
-    }
+
 }
 
 
