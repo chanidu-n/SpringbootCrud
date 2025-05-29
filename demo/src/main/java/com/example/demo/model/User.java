@@ -14,9 +14,12 @@ import lombok.NoArgsConstructor;
 public class User {
     @Id
 
-    @Column(name = "test")
+
     private int id;
     private String name;
+
     private String adress;
+    private String password;
+    private String role;
 }
 
